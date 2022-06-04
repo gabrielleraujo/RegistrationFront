@@ -1,0 +1,45 @@
+
+:root {
+    --cor-stateGray: #708090;
+    --cor-fireBrick: #B22222;
+}
+
+.container {
+    color: var(--cor-stateGray);
+    padding-left: 8em;
+    padding-right: 8em;
+}
+
+.container-item {
+    color: var(--cor-stateGray);
+    
+    align-items: left;
+    justify-items: left;
+    justify-content: space-between;
+
+    padding: 1em;
+    width: 98vw;
+    height: 2em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.sessao {
+    font-size: 4rem;
+    font-weight: 100;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Tangerine', cursive;
+    text-align: center;
+}
+
+.preco {
+    color: var(--cor-fireBrick);
+}

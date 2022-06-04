@@ -1,0 +1,40 @@
+:root {
+    --cor-stateGray: #708090;
+    --cor-lavender: #E6E6FA;
+    --cor-lightSteelBlue: #B0C4DE;
+    --cor-mediumAquamarine: #66CDAA;
+    --cor-fireBrick: #B22222;
+    --cor-khaki: #F0E68C;
+}
+
+/* Buttons */
+.btn {
+    background-color: var(--cor-lavender);
+    color: var(--cor-stateGray);
+    width: 6em;
+    height: 3em;
+    border: none;
+    border-radius: 0.4em;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.btn-success:hover {
+    background-color: var(--cor-mediumAquamarine);
+}
+
+.btn-info:hover {
+    background-color: var(--cor-lightSteelBlue);
+}
+
+.btn-danger:hover {
+    background-color: var(--cor-fireBrick);
+}
+
+.btn-warning:hover {
+    background-color: var(--cor-khaki);
+}

@@ -1,0 +1,54 @@
+:root {
+    -cor-black: black;
+    --cor-whiteSmoke: #F5F5F5;
+    --cor-stateGray: #708090;
+    --cor-lavender: #E6E6FA;
+    --cor-lavender-dark: #c9c9db;
+    --cor-lightSteelBlue: #B0C4DE;
+    --cor-blue-a: #0366d6;
+}
+
+html {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    background-color: var(--cor-whiteSmoke);
+    color: var(--cor-lavender);
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 6em; /* Vertically center the text there */
+}
+
+a {
+    color: var(--cor-blue-a);
+}  
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor-lightSteelBlue);
+}
+
+p {
+    color: var(--cor-stateGray);
+}
+
+ul {
+    color: var(--cor-black);
+}
+
+li {
+    list-style: none;
+}
+
+input, select {
+    padding: 0.8em;
+    border-radius: 0.4em;
+    border-width: 0.1em;
+    border-color: var(--cor-lavender-dark);
+}
