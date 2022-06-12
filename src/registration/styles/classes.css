@@ -1,19 +1,18 @@
 
 :root {
-    --cor-stateGray: #708090;
-    --cor-fireBrick: #B22222;
+    --color-stateGray: #708090;
+    --color-fireBrick: #B22222;
 }
 
 .container {
-    color: var(--cor-stateGray);
+    color: var(--color-stateGray);
     padding-left: 8em;
     padding-right: 8em;
 }
 
 .container-item {
-    color: var(--cor-stateGray);
+    color: var(--color-stateGray);
     
-    align-items: left;
     justify-items: left;
     justify-content: space-between;
 
@@ -41,5 +40,11 @@
 }
 
 .preco {
-    color: var(--cor-fireBrick);
+    color: var(--color-fireBrick);
+}
+
+.required {
+    color: var(--color-fireBrick);
+    font-size: 1.4em; 
+    padding-left:0.4em;
 }

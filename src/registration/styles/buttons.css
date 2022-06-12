@@ -1,16 +1,17 @@
 :root {
-    --cor-stateGray: #708090;
-    --cor-lavender: #E6E6FA;
-    --cor-lightSteelBlue: #B0C4DE;
-    --cor-mediumAquamarine: #66CDAA;
-    --cor-fireBrick: #B22222;
-    --cor-khaki: #F0E68C;
+    --color-stateGray: #708090;
+    --color-lavender: #E6E6FA;
+    --color-lightSteelBlue: #B0C4DE;
+    --color-mediumAquamarine: #66CDAA;
+    --color-fireBrick: #B22222;
+    --color-khaki: #F0E68C;
+    --color-dar-green : #006100;
 }
 
 /* Buttons */
 .btn {
-    background-color: var(--cor-lavender);
-    color: var(--cor-stateGray);
+    background-color: var(--color-lavender);
+    color: var(--color-stateGray);
     width: 6em;
     height: 3em;
     border: none;
@@ -24,17 +25,17 @@
 }
 
 .btn-success:hover {
-    background-color: var(--cor-mediumAquamarine);
+    background-color: var(--color-mediumAquamarine);
 }
 
 .btn-info:hover {
-    background-color: var(--cor-lightSteelBlue);
+    background-color: var(--color-lightSteelBlue);
 }
 
 .btn-danger:hover {
-    background-color: var(--cor-fireBrick);
+    background-color: var(--color-fireBrick);
 }
 
 .btn-warning:hover {
-    background-color: var(--cor-khaki);
+    background-color: var(--color-khaki);
 }

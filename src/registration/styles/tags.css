@@ -1,11 +1,11 @@
 :root {
-    --cor-black: black;
-    --cor-whiteSmoke: #F5F5F5;
-    --cor-stateGray: #708090;
-    --cor-lavender: #E6E6FA;
-    --cor-lavender-dark: #c9c9db;
-    --cor-lightSteelBlue: #B0C4DE;
-    --cor-blue-a: #0366d6;
+    --color-black: black;
+    --color-whiteSmoke: #F5F5F5;
+    --color-stateGray: #708090;
+    --color-lavender: #E6E6FA;
+    --color-lavender-dark: #c9c9db;
+    --color-lightSteelBlue: #B0C4DE;
+    --color-blue-a: #0366d6;
 }
 
 html {
@@ -15,8 +15,8 @@ html {
 }
 body {
     /* Margin bottom by footer height */
-    background-color: var(--cor-whiteSmoke);
-    color: var(--cor-lavender);
+    background-color: var(--color-whiteSmoke);
+    color: var(--color-lavender);
 }
 footer {
   position: absolute;
@@ -27,19 +27,19 @@ footer {
 }
 
 a {
-    color: var(--cor-blue-a);
+    color: var(--color-blue-a);
 }  
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--cor-lightSteelBlue);
+    color: var(--color-lightSteelBlue);
 }
 
 p {
-    color: var(--cor-stateGray);
+    color: var(--color-stateGray);
 }
 
 ul {
-    color: var(--cor-black);
+    color: var(--color-black);
 }
 
 li {
@@ -50,5 +50,5 @@ input, select {
     padding: 0.8em;
     border-radius: 0.4em;
     border-width: 0.1em;
-    border-color: var(--cor-lavender-dark);
+    border-color: var(--color-lavender-dark);
 }
