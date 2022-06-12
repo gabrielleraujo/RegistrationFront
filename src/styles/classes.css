@@ -1,4 +1,3 @@
-
 :root {
     --color-stateGray: #708090;
     --color-fireBrick: #B22222;
@@ -31,16 +30,12 @@
     flex-direction: column;
 }
 
-.sessao {
+.section-title {
     font-size: 4rem;
     font-weight: 100;
     font-family: 'Amatic SC', cursive;
     font-family: 'Tangerine', cursive;
     text-align: center;
-}
-
-.preco {
-    color: var(--color-fireBrick);
 }
 
 .required {

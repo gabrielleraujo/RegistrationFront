@@ -8,7 +8,6 @@
     --color-dar-green : #006100;
 }
 
-/* Buttons */
 .btn {
     background-color: var(--color-lavender);
     color: var(--color-stateGray);
