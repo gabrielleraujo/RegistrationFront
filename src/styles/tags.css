@@ -13,11 +13,28 @@ html {
     position: relative;
     min-height: 100%;
 }
+
+header, nav {
+    width: 100vw;
+    background-color: var(--color-black);
+}
+nav {
+    position: sticky;
+    top: 0;
+    height: 6em;
+    height: 4em;
+}
+header h5 {
+    margin: 0em;
+}
+
 body {
-    /* Margin bottom by footer height */
+    margin: 0em;
+    padding: 0em;
     background-color: var(--color-whiteSmoke);
     color: var(--color-lavender);
 }
+
 footer {
   position: absolute;
   bottom: 0;

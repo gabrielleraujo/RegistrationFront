@@ -15,10 +15,10 @@ function clearValidations(form)
     }
 }
 
-function isInvalidValidate(delegate, node, errorMessage = "is invalid, please retry :(")
+function isInvalidValidate(predicate, node, errorMessage = "is invalid, please retry :(")
 {
     let result = node.parentNode.querySelector('[validation]');
-    if(delegate)
+    if(predicate)
     {
         addMessage(result, `${errorMessage}`);
         setStyleError(result);
