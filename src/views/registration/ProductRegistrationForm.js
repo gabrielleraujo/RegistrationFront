@@ -7,12 +7,13 @@ let form = document.querySelector('[register]');
 window.addEventListener("load", function (event) {
     event.preventDefault();
 
-    addStyleRequired(event.target.querySelector('[in-name]'));
-    addStyleRequired(event.target.querySelector('[in-price]'));
-    addStyleRequired(event.target.querySelector('[in-description]'));
-    addStyleRequired(event.target.querySelector('[in-category]'));
-    addStyleRequired(event.target.querySelector('[in-color]'));
-    addStyleRequired(event.target.querySelector('[in-size]'));
+    let form = event.target;
+    addStyleRequired(form.querySelector('[in-name]'));
+    addStyleRequired(form.querySelector('[in-price]'));
+    addStyleRequired(form.querySelector('[in-description]'));
+    addStyleRequired(form.querySelector('[in-category]'));
+    addStyleRequired(form.querySelector('[in-color]'));
+    addStyleRequired(form.querySelector('[in-size]'));
 })
 
 form.addEventListener("submit", function (event) {  

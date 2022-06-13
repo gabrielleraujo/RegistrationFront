@@ -1,9 +1,8 @@
 import {ProductRequestViewModel} from "../../models/product/ProductRequestViewModel.js";
+import {ECOMMERCE_URL} from "../util/Urls.js"
 
 function postNewProduct(form)
 {
-    const URL = "https://localhost:5001/api/v1/";
-
     const options = {
         method: form.method,
         body: JSON.stringify(createProductRequestViewModel(form)),
@@ -17,7 +16,7 @@ function postNewProduct(form)
 
     const result = document.getElementById("result-form");
 
-    fetch(`${URL}product`, options)
+    fetch(`${ECOMMERCE_URL}product`, options)
     .then(resp => resp.json())
     .then(json => {
         result.innerHTML = JSON.stringify(json)

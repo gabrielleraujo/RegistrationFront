@@ -5,9 +5,8 @@ function setStyleError(result)
 
 function addStyleRequired(item)
 {
-    let content = item.parentNode.querySelector('label');
-    content.insertAdjacentHTML('afterend',"<small required>*</small>");
-    item.parentNode.querySelector("[required]").setAttribute("class", "required");
+    item.parentNode.querySelector('label')
+    .insertAdjacentHTML('afterend',"<small required class='required'>*</small>");
 }
 
 export {setStyleError, addStyleRequired}
