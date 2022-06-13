@@ -1,7 +1,10 @@
-import {setStyleError, setStyleSuccess} from "../styleService/StyleService.js"
+import {setStyleError} from "../style/UtilStyleService.js"
 
-function addMessage(result, message)
+let isSuccess = true;
+
+function addErrorMessage(result, message)
 {
+    isSuccess = false;
     result.textContent = `\n ${message}`;
 }
 
@@ -20,27 +23,21 @@ function isInvalidValidate(predicate, node, errorMessage = "is invalid, please r
     let result = node.parentNode.querySelector('[validation]');
     if(predicate)
     {
-        addMessage(result, `${errorMessage}`);
+        addErrorMessage(result, `${errorMessage}`);
         setStyleError(result);
-    }
-    else 
-    {
-        addMessage(result, `${node.value} is valid :)`);
-        setStyleSuccess(result);
     }
 }
 
 function isNullOrEmptyValidate(node)
 {
-    debugger;
     let result = node.parentNode.querySelector('[validation]');
     let name = node.value;
 
     if (name === "" || name == undefined)
     {
-        addMessage(result, `${name} cannot be empty.`);
+        addErrorMessage(result, `${name} cannot be empty.`);
         setStyleError(result);
     }
 }
 
-export { isInvalidValidate, isNullOrEmptyValidate, clearValidations }
+export { isInvalidValidate, isNullOrEmptyValidate, clearValidations, isSuccess }

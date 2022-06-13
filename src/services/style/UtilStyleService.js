@@ -1,14 +1,6 @@
-const colorFireBrick = "#B22222";
-const colorDarkGreen = "#006100";
-
 function setStyleError(result)
 {
-    result.style = `color: ${colorFireBrick}`;
-}
-
-function setStyleSuccess(result)
-{
-    result.style = `color: ${colorDarkGreen}`;
+    result.setAttribute("class", "error");
 }
 
 function addStyleRequired(item)
@@ -18,4 +10,4 @@ function addStyleRequired(item)
     item.parentNode.querySelector("[required]").setAttribute("class", "required");
 }
 
-export {setStyleError, setStyleSuccess, addStyleRequired}
+export {setStyleError, addStyleRequired}

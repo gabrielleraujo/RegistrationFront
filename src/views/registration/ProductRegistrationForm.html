@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Javascript -->
-    <script type="module" src="RegistrationForm.js"></script>
+    <script type="module" src="ProductRegistrationForm.js"></script>
 
     <!-- Fonsts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,14 +30,14 @@
     <!-- End Navbar --> 
 
     <section class="container">
-      <form register id="product-registration-post">
+      <form register id="product-registration-post" method="post">
         <h5 class="section-title">Register a Product</h5>
         <section class="row">
           <div class="container-item col">
             <div class="row">
               <label id="name" >Product's name</label>
             </div>
-            <input in-name type="text" placeholder="Product's name">
+            <input in-name name="name" type="text" placeholder="Product's name">
             <small validation></small>
           </div>
 
@@ -45,7 +45,7 @@
             <div class="row">
               <label id="price">Price R$</label>
             </div>
-            <input in-price type="number" step="0.01" placeholder="Price R$">
+            <input in-price name="price" type="number" step="0.01" placeholder="Price R$">
             <small validation></small>
           </div>
         </section>
@@ -56,7 +56,7 @@
             <div class="row">
               <label id="Description">Description</label>
             </div>
-            <input in-description type="text" placeholder="Description">
+            <input in-description name="description" type="text" placeholder="Description">
             <small validation></small>
           </div>
         </section>
@@ -67,7 +67,7 @@
             <div class="row">
               <label id="categoryId">Category</label>
             </div>
-            <select in-category class="single-select" name="CategoryId">
+            <select in-category name="categoryId" class="single-select" name="CategoryId">
               <option selected value="">[Select the category]</option>
               <option value="1">blouse</option>
               <option value="2">pants</option>
@@ -80,7 +80,7 @@
             <div class="row">
               <label id="colorId">Color</label>
             </div>
-            <select in-color class="single-select" name="ColorId">
+            <select in-color name="colorId" class="single-select" name="ColorId">
               <option selected value="">[Select the color]</option>
               <option value="1">black</option>
               <option value="2">white</option>
@@ -92,7 +92,7 @@
             <div class="row">
               <label id="SizeId">Size</label>
             </div>
-            <select in-size class="single-select" name="SizeId">
+            <select in-size name="sizeId" class="single-select" name="SizeId">
               <option selected value="">[Select the size]</option>
               <option value="1">PP</option>
               <option value="2">P</option>
@@ -109,6 +109,7 @@
             <button class="btn btn-warning">Back</button>
             <button submit id="btn-submit" type="submit" class="btn btn-success">Finish</button>
         </div>
+        <div id="result-form"></div>
       </form>
     </section>
     <br>

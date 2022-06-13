@@ -1,4 +1,4 @@
-import {isNullOrEmptyValidate, isInvalidValidate, clearValidations} from "./UtilsValidationService.js"
+import {isNullOrEmptyValidate, isInvalidValidate, clearValidations, isSuccess} from "./UtilValidationService.js"
 
 function validate(form) {
     clearValidations(form);
@@ -9,6 +9,8 @@ function validate(form) {
     validateCategory(form.querySelector('[in-category]'));
     validateColor(form.querySelector('[in-color]'));
     validateSize(form.querySelector('[in-size]'));
+
+    return isSuccess;
 }
 
 function validateName(input)

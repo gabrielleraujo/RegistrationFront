@@ -49,6 +49,10 @@
     padding-left:0.4em;
 }
 
+.error {
+    color: var(--color-fireBrick);
+}
+
 @media screen and (max-width: 820px) {
     #product-registration-post > .row {
         flex-direction: column;
