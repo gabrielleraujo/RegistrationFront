@@ -1,6 +1,6 @@
 import {isNullOrEmptyValidate, isInvalidValidate, clearValidations, isSuccess} from "./UtilValidationService.js"
 
-function IsValid(fields) { 
+function isValid(fields) { 
     validateName(fields.name);
     validatePrice(fields.price);
     validateDescription(fields.description);
@@ -29,4 +29,4 @@ function validateCategory(input) {isNullOrEmptyValidate(input); }
 function validateColor(input) {isNullOrEmptyValidate(input); }
 function validateSize(input) {isNullOrEmptyValidate(input); }
 
-export { IsValid, clearValidations }
+export { isValid, clearValidations }

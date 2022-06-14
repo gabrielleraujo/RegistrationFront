@@ -1,4 +1,4 @@
-import { IsValid } from "../../services/validation/ProductRegistrationValidationService.js";
+import { isValid, clearValidations } from "../../services/validation/ProductRegistrationValidationService.js";
 import { addStyleRequired } from "../../services/style/UtilStyleService.js";
 import { 
     createNewProduct, 
@@ -37,7 +37,9 @@ let requiredFields = [
 form.addEventListener("submit", function (event) {  
     event.preventDefault();  
 
-    if(IsValid(fields)) { createNewProduct(form); }
+    clearValidations();
+    
+    if(isValid(fields)) { createNewProduct(form); }
 });
 
 window.addEventListener("load", function (event) {
