@@ -1,11 +1,25 @@
-import {ProductRequestViewModel} from "../../models/product/ProductRequestViewModel.js";
-import {ECOMMERCE_URL} from "../util/Urls.js"
+import { ECOMMERCE_URL, createdStatusCode } from "./utils/Urls.js"
+import { createProductRequestViewModelFactory } from "./factories/ProductRequestViewModelFactory.js";
 
-function postNewProduct(form)
+function getCategories() { return getViewModel("category"); }
+function getColors() { return getViewModel("color"); }
+function getSizes() { return getViewModel("size"); }
+
+function getViewModel(model) 
 {
+    const result = document.getElementById("result-form");
+    return fetch(`${ECOMMERCE_URL}${model}`)
+    .then(resp => resp.json())
+    .catch(e => {
+        result.innerHTML = e
+    });
+}
+
+function postNewProduct(form) {
+    debugger;
     const options = {
         method: form.method,
-        body: JSON.stringify(createProductRequestViewModel(form)),
+        body: JSON.stringify(createProductRequestViewModelFactory(form)),
         headers: {
             "dataType": "json",
             "charset": "utf8",
@@ -15,30 +29,15 @@ function postNewProduct(form)
     }
 
     const result = document.getElementById("result-form");
-
     fetch(`${ECOMMERCE_URL}product`, options)
-    .then(resp => resp.json())
-    .then(json => {
-        result.innerHTML = JSON.stringify(json)
+    .then(resp => {
+        result.innerHTML = resp.status == createdStatusCode 
+        ? "Product registered successfully!" 
+        : "An error has occurred /:"
     })
     .catch(e => {
         result.innerHTML = e
     });
 }
 
-function createProductRequestViewModel(form)
-{
-    const data = new FormData(form);
-    const searchParams = new URLSearchParams(data);
-    
-    return new ProductRequestViewModel(
-        searchParams.get("name"),
-        searchParams.get("price"),
-        searchParams.get("description"),
-        searchParams.get("categoryId"),
-        searchParams.get("colorId"),
-        searchParams.get("sizeId")
-    )
-}
-
-export default postNewProduct;
+export { postNewProduct, getCategories, getColors, getSizes };

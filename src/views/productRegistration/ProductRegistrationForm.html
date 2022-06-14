@@ -22,12 +22,34 @@
 
   <body>
     <!-- Header -->
-    <header></header>
-    <!-- End Header -->
+    <header class="container row">
+      <nav class="nav-bar row">
+          <a>Ecommerce</a>
+          <ul class="row">
+              <li class="nav-item">
+                  <a>Products</a>
+              </li>
+              <li class="nav-item">
+                  <a>Users</a>
+              </li>
 
-    <!-- Navbar -->
-    <nav></nav>
-    <!-- End Navbar --> 
+              <li class="nav-item">
+                  <a>Register a Product</a>
+              </li>
+              <li class="nav-item">
+                  <a>Register a User</a>
+              </li>
+
+              <li class="nav-item">
+                  <a>Login</a>
+              </li>
+              <li class="nav-item">
+                  <a>Logout</a>
+              </li>
+          </ul>
+      </nav>
+    <!-- End Header -->
+    </header>
 
     <section class="container">
       <form register id="product-registration-post" method="post">
@@ -69,9 +91,6 @@
             </div>
             <select in-category name="categoryId" class="single-select" name="CategoryId">
               <option selected value="">[Select the category]</option>
-              <option value="1">blouse</option>
-              <option value="2">pants</option>
-              <option value="3">coat</option>
             </select>
             <small validation></small>
           </div>
@@ -82,8 +101,6 @@
             </div>
             <select in-color name="colorId" class="single-select" name="ColorId">
               <option selected value="">[Select the color]</option>
-              <option value="1">black</option>
-              <option value="2">white</option>
             </select>
             <small validation></small>
           </div>
@@ -94,11 +111,6 @@
             </div>
             <select in-size name="sizeId" class="single-select" name="SizeId">
               <option selected value="">[Select the size]</option>
-              <option value="1">PP</option>
-              <option value="2">P</option>
-              <option value="3">M</option>
-              <option value="4">G</option>
-              <option value="5">GG</option>
             </select>
             <small validation></small>
           </div>

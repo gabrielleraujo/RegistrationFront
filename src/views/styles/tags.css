@@ -15,14 +15,14 @@ html {
 }
 
 header, nav {
+    height: 6em;
+    height: 4em;
     width: 100vw;
     background-color: var(--color-black);
 }
 nav {
     position: sticky;
     top: 0;
-    height: 6em;
-    height: 4em;
 }
 header h5 {
     margin: 0em;

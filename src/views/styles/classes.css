@@ -53,6 +53,18 @@
     color: var(--color-fireBrick);
 }
 
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2em;
+}
+
 @media screen and (max-width: 820px) {
     #product-registration-post > .row {
         flex-direction: column;
