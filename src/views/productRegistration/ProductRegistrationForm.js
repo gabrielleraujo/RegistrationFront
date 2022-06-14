@@ -37,8 +37,7 @@ let requiredFields = [
 form.addEventListener("submit", function (event) {  
     event.preventDefault();  
 
-    clearValidations();
-    
+    clearValidations(form);
     if(isValid(fields)) { createNewProduct(form); }
 });
 
