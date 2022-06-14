@@ -1,4 +1,4 @@
-import { ProductRequestViewModel } from "../../../models/product/ProductRequestViewModel.js";
+import { ProductRequestViewModel } from "../models/product/ProductRequestViewModel.js";
 
 export function createProductRequestViewModelFactory(form) {
     const data = new FormData(form);

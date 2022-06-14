@@ -1,0 +1,3 @@
+const CREATED_STATUS_CODE = 201;
+
+export { CREATED_STATUS_CODE }

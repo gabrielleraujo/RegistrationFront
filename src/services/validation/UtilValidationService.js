@@ -1,4 +1,4 @@
-import {setStyleError} from "../style/UtilStyleService.js"
+import { setStyleError } from "../style/UtilStyleService.js"
 
 let isSuccess = true;
 

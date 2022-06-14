@@ -1,6 +1,7 @@
 :root {
     --color-stateGray: #708090;
     --color-fireBrick: #B22222;
+    --color-lightLila: #baafd3;
 }
 
 .container {
@@ -58,11 +59,15 @@
     align-items: center;
 }
 
+.nav-bar a {
+    color: var(--color-lightLila);
+}
+
 .nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2em;
+    padding: 2em;
 }
 
 @media screen and (max-width: 820px) {

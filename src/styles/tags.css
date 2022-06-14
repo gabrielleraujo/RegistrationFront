@@ -3,9 +3,9 @@
     --color-whiteSmoke: #F5F5F5;
     --color-stateGray: #708090;
     --color-lavender: #E6E6FA;
-    --color-lavender-dark: #c9c9db;
-    --color-lightSteelBlue: #B0C4DE;
-    --color-blue-a: #0366d6;
+    --color-lavender-dark: #afafdf;
+    --color-lightLila: #baafd3;
+    --color-blue-a: #2a61a0;
 }
 
 html {
@@ -48,7 +48,7 @@ a {
 }  
 
 h1, h2, h3, h4, h5, h6 {
-    color: var(--color-lightSteelBlue);
+    color: var(--color-lightLila);
 }
 
 p {
