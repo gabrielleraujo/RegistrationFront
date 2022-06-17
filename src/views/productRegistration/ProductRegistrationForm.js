@@ -1,3 +1,4 @@
+import { loadHeader } from "../shared/layout.js";
 import { isValid, clearValidations } from "../../services/validation/ProductRegistrationValidationService.js";
 import { addStyleRequired } from "../../services/style/UtilStyleService.js";
 import { 
@@ -44,6 +45,7 @@ form.addEventListener("submit", function (event) {
 window.addEventListener("load", function (event) {
     event.preventDefault();
 
+    loadHeader();
     addStyleRequired(requiredFields);
     loadCategories(categorySelectTag);
     loadColors(colorSelectTag);

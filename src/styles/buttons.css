@@ -4,7 +4,8 @@
     --color-mediumAquamarine: #66CDAA;
     --color-fireBrick: #B22222;
     --color-khaki: #F0E68C;
-    --color-dar-green : #006100;
+    --color-blue: #acacf8;
+    --color-dark-green : #006100;
 }
 
 .btn {
@@ -27,7 +28,7 @@
 }
 
 .btn-info:hover {
-    background-color: var(--color-lightSteelBlue);
+    background-color: var(--color-blue);
 }
 
 .btn-danger:hover {

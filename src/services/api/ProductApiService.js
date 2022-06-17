@@ -3,6 +3,7 @@ import { ECOMMERCE_URL } from "../../shared/Url.js"
 function getCategories() { return getViewModel("category"); }
 function getColors() { return getViewModel("color"); }
 function getSizes() { return getViewModel("size"); }
+function getProducts() { return getViewModel("product"); }
 
 function getViewModel(model) 
 {
@@ -24,4 +25,4 @@ function postNewProduct(requestViewModel) {
     return fetch(`${ECOMMERCE_URL}product`, options)
 }
 
-export { postNewProduct, getCategories, getColors, getSizes };
+export { postNewProduct, getCategories, getColors, getSizes, getProducts };

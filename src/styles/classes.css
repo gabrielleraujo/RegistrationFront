@@ -26,6 +26,10 @@
     height: 2em;
 }
 
+.item > * {
+    margin: 1em;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -68,6 +72,10 @@
     justify-content: center;
     align-items: center;
     padding: 2em;
+}
+
+.price {
+    color: var(--color-fireBrick);
 }
 
 @media screen and (max-width: 820px) {

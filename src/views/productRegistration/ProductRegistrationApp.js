@@ -1,4 +1,4 @@
-import { postNewProduct, getCategories, getColors, getSizes } from "../../services/api/ProductRegistrationApiService.js";
+import { postNewProduct, getCategories, getColors, getSizes } from "../../services/api/ProductApiService.js";
 import { createProductRequestViewModelFactory } from "../../factories/ProductRequestViewModelFactory.js";
 import { CREATED_STATUS_CODE } from "../../shared/StatusCode.js"
 
